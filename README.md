@@ -277,6 +277,13 @@ run:
 > on the train/test split and scaling used in the notebook. Reproduce them with
 > `output_analysis.ipynb` against `pred_vs_true_by_bzn.csv`.
 
+### Scope
+
+The model comes from a course project, on hourly ENTSO-E data for 20 bidding zones from
+2019 to 2024. Its zone embedding exists only for these 20 zones, so a forecast for
+another zone needs a new training run. The comparison with the baselines holds for the
+train and test split of `OnionScripts/Onion-NN.ipynb`.
+
 ---
 
 ## Reproducibility
